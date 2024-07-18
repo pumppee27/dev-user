@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.select2-selection--single {
+  border: 1px solid #dee2e6 !important;
+  height: 50px !important;
+}
+.select2-selection__rendered {
+  border: none;
+  line-height: 31px !important;
+  height: 50px;
+}
+.select2-container .select2-selection--single {
+  height: 35px !important;
+}
+.select2-selection__arrow {
+  height: 34px !important;
+}
+
+/* input password */
+.input-password {
+  background-image: url('assets/icons/eye.svg') !important;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 10px 10px;
+  padding: 6px 20px 6px 15px;
+}
+
+/* Select2 */
+.select2-search__field:focus {
+  outline: none;
+}
+
+button.btn-close {
+  color: white !important;
+}
+
+/* Datatable */
+
+.dataTables_scrollHeadInner,
+.table {
+  width: 100% !important;
+}
+
+.dt-search,
+.dt-length {
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.dt-empty {
+  text-align: center;
+}
+
+.dt-search > #dt-search-0 {
+  margin: 0 -10px 0 10px;
+  width: 300px !important;
+}
+
+.dt-length > #dt-length-0 {
+  width: 80px !important;
+  margin: 0 10px 0 -10px;
+}
+
+.dt-info {
+  display: none;
+}
+
+.pagination {
+  font-size: 30pt !important;
+}
+
+/* Akhir Datatable */
+
+.active {
+  background-color: rgb(242, 242, 242);
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 6000;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  left: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgba(244, 242, 245, 1);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  position: fixed;
+  width: 85vw;
+  height: 8vh;
+  inset: 0 0 0 15vw;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 499;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all ease 0.5s;
+}
+
+header #toggle-sidebar svg {
+  display: block;
+  cursor: pointer;
+}
+
+header #user-menu {
+  right: 0;
+  height: 8vh;
+}
+
+header #user-menu .dropdown ul li a {
+  text-decoration: none;
+  color: black;
+}
+header #user-menu .dropdown ul li a svg {
+  margin: 0 10px 0 5px;
+}
+
+header .dropdown-toggle-user:hover {
+  background-color: rgba(244, 242, 245, 1);
+}
+
+header .dropdown-toggle-user:focus {
+  border: none;
+}
+
+aside {
+  width: 15vw;
+  min-height: 100vh;
+  top: 0;
+  height: auto;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all ease 0.5s;
+}
+
+aside #logo {
+  height: 8vh;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+aside #logo img {
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  display: block;
+  margin: 0 auto;
+}
+
+aside nav ul {
+  padding: 0;
+  line-height: 3rem;
+  position: relative;
+}
+
+aside nav ul li {
+  list-style: none;
+  color: black;
+}
+aside nav ul li:hover {
+  cursor: pointer;
+  list-style: none;
+  width: 100%;
+  background-color: rgba(244, 242, 245, 1);
+}
+aside nav ul li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+aside nav ul li a svg {
+  margin: 0 5px;
+}
+
+#sub-menu-master {
+  width: 100%;
+  display: none;
+  position: static;
+}
+
+#sub-menu-master li a svg {
+  margin: 0 0.5rem 0 2rem !important;
+}
+
+.rotate-menu-master {
+  transform: rotate(-90deg);
+}
+
+.sub-menu-show {
+  display: block !important;
+}
+
+main {
+  position: absolute;
+  width: 85vw;
+  height: auto;
+  min-height: 82vh;
+  transition: all ease 0.5s;
+  inset: 8vh 0 8vh 15vw;
+  padding: 20px;
+}
+
+footer {
+  display: none;
+  width: 85vw;
+  height: 5vh;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  bottom: 0;
+  left: 15vw;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -1.95px 0px;
+}
+
+/* Scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(178, 178, 178);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Custom Bootstrap */
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
